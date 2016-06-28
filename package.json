@@ -1,0 +1,26 @@
+{
+  "name": "coinr-cli",
+  "description": "Get the current ticker value for cryptocurrencies",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "coinr": "index.js"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": "johnotander/coinr-cli",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "coinr": "^0.1.2",
+    "is-present": "^1.0.0",
+    "meow": "^3.7.0",
+    "shtml": "0.0.1-beta.3",
+    "to-percent": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "*"
+  }
+}
