@@ -44,6 +44,7 @@ Ethereum(ETH)
 
 - [`coinr`](https://github.com/johnotander/coinr)
 - [`shtml`](https://github.com/johnotander/shtml)
+- [`to-percentage`](https://github.com/johnotander/to-percentage)
 
 ## License
 
