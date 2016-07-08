@@ -8,7 +8,20 @@ const toPercentage = require('to-percentage')
 
 const cli = meow(shtml`
   <div>
-    <bold>coinr</bold>
+    <underline>Usage</underline>
+
+    $ coinr [currency]<br><br>
+
+    <underline>Options</underline>
+
+    -h, --help - Get help menu
+    -v, --version - Get the version<br><br>
+
+    <underline>Examples</underline>
+
+    $ coinr
+    $ coinr bitcoin
+    $ coinr ethereum
   </div>
 `, {
   alias: {

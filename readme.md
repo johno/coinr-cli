@@ -5,15 +5,39 @@ Get the current ticker value for cryptocurrencies
 ## Installation
 
 ```bash
-npm install --save coinr-cli
+npm i -g coinr-cli
 ```
 
 ## Usage
 
-```javascript
-var coinrCli = require('coinr-cli')
+```sh
+❯ coinr -h
 
-coinrCli()  // => true
+  Get the current ticker value for cryptocurrencies
+
+  Usage
+
+      $ coinr [currency]
+
+  Options
+
+      -h, --help - Get help menu
+      -v, --version - Get the version
+
+  Examples
+
+      $ coinr
+      $ coinr bitcoin
+      $ coinr ethereum
+```
+
+```sh
+❯ coinr ethereum
+
+Ethereum(ETH)
+
+  $10.1098
+  Changes: 0%1h -4%24h -19%7d
 ```
 
 ## License
