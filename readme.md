@@ -40,6 +40,11 @@ Ethereum(ETH)
   Changes: 0%1h -4%24h -19%7d
 ```
 
+## Related
+
+- [`coinr`](https://github.com/johnotander/coinr)
+- [`shtml`](https://github.com/johnotander/shtml)
+
 ## License
 
 MIT
