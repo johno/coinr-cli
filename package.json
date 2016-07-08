@@ -17,8 +17,8 @@
     "coinr": "^0.1.2",
     "is-present": "^1.0.0",
     "meow": "^3.7.0",
-    "shtml": "0.0.1-beta.3",
-    "to-percent": "^1.0.2"
+    "shtml": "0.1.0",
+    "to-percentage": "^1.0.0"
   },
   "devDependencies": {
     "ava": "*"
