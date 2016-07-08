@@ -8,10 +8,17 @@
     "coinr": "index.js"
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava -v"
   },
   "repository": "johnotander/coinr-cli",
-  "keywords": [],
+  "keywords": [
+    "coinr",
+    "cli",
+    "cli-app",
+    "crypto",
+    "currency",
+    "cryptocurrency"
+  ],
   "license": "MIT",
   "dependencies": {
     "coinr": "^0.1.2",

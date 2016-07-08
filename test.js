@@ -1,11 +1,21 @@
 import test from 'ava'
 import cp from 'child_process'
 
-testi.cb('coinr-cli does something awesome', t => {
-  t.plan(1)
+test.cb('handles list of currencies', t => {
+  t.plan(2)
 
   cp.execFile('./index.js', (err, stdout, stderr) => {
-    t.true(stdout.includes('coinr'))
+    t.true(stdout.includes('Changes:'))
+    t.true(stdout.includes('-----'))
+    t.end()
+  })
+})
+
+test.cb('handles a specific currency', t => {
+  t.plan(1)
+
+  cp.execFile('./index.js', ['ethereum'], (err, stdout, stderr) => {
+    t.true(stdout.includes('ETH'))
     t.end()
   })
 })
