@@ -15,18 +15,21 @@ const cli = meow(shtml`
     <underline>Options</underline>
 
     -h, --help - Get help menu
+    -l, --limit - Limit list of currencies
     -v, --version - Get the version<br><br>
 
     <underline>Examples</underline>
 
     $ coinr
+    $ coinr -l 20
     $ coinr bitcoin
     $ coinr ethereum
   </div>
 `, {
   alias: {
     v: 'version',
-    h: 'help'
+    h: 'help',
+    l: 'limit'
   }
 })
 
@@ -36,6 +39,10 @@ coinr(cli.input[0])
     if (isPresent(cli.input[0])) {
       console.log(renderCurrency(d))
     } else {
+      if (cli.flags.limit) {
+        d = d.slice(0, cli.flags.limit)
+      }
+
       console.log(shtml`
         ${d.map(renderCurrency).join(shtml`<p>---------</p>`)}
       `)
