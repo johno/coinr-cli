@@ -10,7 +10,7 @@ const cli = meow(shtml`
   <div>
     <underline>Usage</underline>
 
-    $ coinr [currency]<br><br>
+    $ coinr [currency [, currency...]]<br><br>
 
     <underline>Options</underline>
 
@@ -24,6 +24,7 @@ const cli = meow(shtml`
     $ coinr -l 20
     $ coinr bitcoin
     $ coinr ethereum
+    $ coinr bitcoin ethereum
   </div>
 `, {
   alias: {
@@ -33,12 +34,18 @@ const cli = meow(shtml`
   }
 })
 
-coinr(cli.input[0])
-  .then(d => {
-    console.log('')
-    if (isPresent(cli.input[0])) {
-      console.log(renderCurrency(d))
-    } else {
+if (cli.input[0]) {
+  cli.input.forEach(curr => {
+    coinr(curr)
+      .then(d => {
+        console.log('')
+        console.log(renderCurrency(d))
+      })
+  })
+} else {
+  coinr()
+    .then(d => {
+      console.log('')
       if (cli.flags.limit) {
         d = d.slice(0, cli.flags.limit)
       }
@@ -46,8 +53,8 @@ coinr(cli.input[0])
       console.log(shtml`
         ${d.map(renderCurrency).join(shtml`<p>---------</p>`)}
       `)
-    }
-  })
+    })
+}
 
 const renderCurrency = currency => {
   const {
