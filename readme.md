@@ -2,6 +2,8 @@
 
 Get the current ticker value for cryptocurrencies
 
+![coinr](https://cloud.githubusercontent.com/assets/1424573/16717006/bc493c3e-46c9-11e6-89cb-87357e392439.png)
+
 ## Installation
 
 ```bash
