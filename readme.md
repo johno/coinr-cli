@@ -2,7 +2,7 @@
 
 Get the current ticker value for cryptocurrencies
 
-![coinr](https://rawgit.com/johnotander/immutable-css/master/screenshot.gif)
+![coinr](https://rawgit.com/johnotander/coinr-cli/master/screenshot.gif)
 
 ## Installation
 
