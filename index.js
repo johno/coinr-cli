@@ -21,9 +21,11 @@ const cli = meow(shtml`
     <underline>Examples</underline>
 
     $ coinr
-    $ coinr -l 20
+    $ coinr -l 5
     $ coinr bitcoin
+    $ coinr eth
     $ coinr ethereum
+    $ coinr btc eth
     $ coinr bitcoin ethereum
   </div>
 `, {
