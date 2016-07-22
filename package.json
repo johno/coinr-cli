@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "coinr": "^0.1.2",
+    "coinr": "^1.0.0",
     "is-present": "^1.0.0",
     "meow": "^3.7.0",
     "shtml": "0.1.0",
