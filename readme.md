@@ -1,4 +1,4 @@
-# coinr-cli [![Build Status](https://secure.travis-ci.org/johnotander/coinr-cli.svg?branch=master)](https://travis-ci.org/johnotander/coinr-cli) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+# ¤ coinr-cli [![Build Status](https://secure.travis-ci.org/johnotander/coinr-cli.svg?branch=master)](https://travis-ci.org/johnotander/coinr-cli) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 Get the current ticker value for cryptocurrencies
 
